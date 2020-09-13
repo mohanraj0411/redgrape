@@ -1,0 +1,134 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300'); */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.Tabs__slider{
+    display: none;
+}
+
+.Tabs__tablist{
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.Tabs__tablist .Tab{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 0;
+    border-radius: 0;
+    background: #fff;
+    width: 100px;
+    height: 45px;
+    border: 1px solid #848484;
+    font-size: 1.125rem;
+}
+
+.Tab.Tab--active::before{
+    content: "";
+    position: absolute;
+    top: -8px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #c00;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.Tab--active#Red-tab, .Touchable--hover#Red-tab {
+    color: #fff;
+    background: #d7182a;
+    border-color: #d7182a;
+}
+
+.Tab--active#Red-tab::before{
+    border-bottom: 8px solid #d7182a;
+}
+
+.Tab--active#White-tab, .Touchable--hover#White-tab {
+    color: #fff;
+    background: #cc903c;
+    border-color: #cc903c;
+}
+
+.Tab--active#White-tab::before{
+    border-bottom: 8px solid #cc903c;
+}
+
+.Tab--active#Other-tab, .Touchable--hover#Other-tab {
+    color: #fff;
+    background: #447838;
+    border-color: #447838;
+}
+
+.Tab--active#Other-tab::before{
+    border-bottom: 8px solid #447838;
+}
+
+picture img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.heading {
+    margin: 20px 0;
+    position: relative;
+    clear: both;
+    border-bottom: 1px solid #999;
+}
+
+.heading span {
+    padding: 0;
+    color: #999;
+    letter-spacing: .8px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+.list-zip{
+    list-style: none;
+}
+
+.list-zip li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.list-zip li:first-child:after{
+    content: ',';
+}
+
+.paragraph {
+    clear: both;
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 20px;
+    font-size: .9rem;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    border-radius: 4px;
+    color: #8a6d3b !important;
+    margin-top: 1rem !important;
+}
